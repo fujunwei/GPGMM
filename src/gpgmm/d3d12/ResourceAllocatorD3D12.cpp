@@ -504,7 +504,7 @@ namespace gpgmm { namespace d3d12 {
         ShutdownEventTracer();
 
         // TODO: Report details on leaked allocations.
-        ASSERT(SUCCEEDED(CheckForDeviceObjectLeaks()));
+        // ASSERT(SUCCEEDED(CheckForDeviceObjectLeaks()));
     }
 
     void ResourceAllocator::Trim() {

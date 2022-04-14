@@ -24,9 +24,4 @@ void HandleAssertionFailure(const char* file,
                             const char* condition) {
     gpgmm::ErrorLog() << "Assertion failure at " << file << ":" << line << " (" << function
                       << "): " << condition;
-#if defined(GPGMM_ABORT_ON_ASSERT)
-    abort();
-#else
-    GPGMM_BREAKPOINT();
-#endif
 }
